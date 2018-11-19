@@ -13,7 +13,7 @@ ENV GOROOT=/usr/local/go
 ENV GOPATH=/projects
 ENV PATH=$GOPATH/bin:$GOROOT/bin:$PATH:/app/bin/
 
-COPY code /app/bin/
+#COPY code /app/bin/
 
 RUN /usr/local/go/bin/go get github.com/bemasher/rtlamr && /usr/local/go/bin/go get github.com/bemasher/rtlamr-collect
 
